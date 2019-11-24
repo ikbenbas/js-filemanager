@@ -11,11 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/ikbenbas/js-filemanager.git"
   },
-  "author": { 
+  "author": {
     "name": "Bas van Wouwen",
     "email": "hoi@mijnnaamisbas.nl",
     "url": "https://www.mijnnaamisbas.nl/"
-    },
+  },
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/ikbenbas/js-filemanager/issues"
