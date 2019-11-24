@@ -1,0 +1,28 @@
+{
+  "name": "js-filemanager",
+  "version": "0.1.0",
+  "description": "Javascript only filemanager with API connection for fetching and parsing files",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikbenbas/js-filemanager.git"
+  },
+  "author": { 
+    "name": "Bas van Wouwen",
+    "email": "hoi@mijnnaamisbas.nl",
+    "url": "https://www.mijnnaamisbas.nl/"
+    },
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ikbenbas/js-filemanager/issues"
+  },
+  "homepage": "https://github.com/ikbenbas/js-filemanager#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
