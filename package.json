@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
-    "build:production": "cross-env NODE_ENV=production webpack --config webpack.config.js"
+    "build:production": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "lint": "eslint .eslintrc.js *.js --ignore-pattern '!.eslintrc.js'",
+    "lint:fix": "eslint .eslintrc.js *.js --ignore-pattern '!.eslintrc.js' --fix"
   },
   "repository": {
     "type": "git",
@@ -25,14 +27,21 @@
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
     "autoprefixer": "^9.7.2",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "cross-env": "^6.0.3",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
+    "eslint": "^6.7.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "file-loader": "^4.3.0",
     "mini-css-extract-plugin": "^0.8.0",
     "postcss-loader": "^3.0.0",
+    "prettier": "^1.19.1",
     "sass": "^1.23.7",
     "sass-loader": "^8.0.0",
     "ts-loader": "^6.2.1",

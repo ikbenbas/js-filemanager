@@ -1,3 +1,3 @@
-import '../sass/styles.scss';
+import "../sass/styles.scss";
 
-console.log('ts')
+console.log("tsss");
