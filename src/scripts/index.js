@@ -1,3 +1,6 @@
+import '../sass/styles.scss';
+
+
 function component() {
   const element = document.createElement('div');
 
