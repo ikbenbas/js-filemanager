@@ -11,7 +11,7 @@
     "lint:fix": "eslint \"*/**/*.{js,ts,tsx}\" --ignore-pattern 'node_modules/' --ignore-pattern '/dist/*' --fix"
   },
   "lint-staged": {
-    "*.{js,ts}": [
+    "*.{js,ts,scss}": [
       "npm run lint",
       "git add"
     ]
