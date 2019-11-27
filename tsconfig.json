@@ -5,6 +5,7 @@
     "module": "esnext",
     "target": "es5",
     "jsx": "react",
-    "allowJs": true
+    "allowJs": true,
+    "moduleResolution": "node" // This resolution strategy attempts to mimic the Node.js module resolution mechanism at runtime
   }
 }
