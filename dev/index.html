@@ -1,9 +1,30 @@
 <!doctype html>
 <html>
   <head>
-    <title>Getting Started</title>
+    <title>JSFileManager</title>
+    <!-- <link rel="stylesheet" href="../dist/main.bundle.css"> -->
+
+    <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-position: 50%;
+background-size: cover;
+      background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/1365x2048/568277a178ee66e2d5c96f55794f8a55/photo-1569685915250-01b72923ca1c");
+    }
+    </style>
   </head>
   <body>
-    <script src="../dist/bundle.js"></script>
+
+    <button id="filemanager">Filemanager</button>
+
+    <script src="../dist/main.bundle.js"></script>
+    <script>
+      (function(window) {
+        var filemanager = new JSFileManager.JSFileManager({
+          targetElement: '#filemanager'
+        })
+      })(window)
+    </script>
   </body>
 </html>
