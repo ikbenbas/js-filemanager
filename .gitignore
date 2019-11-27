@@ -33,3 +33,6 @@ dist
 
 # Cache files
 .cache/
+
+.idea/
+.DS_Store
