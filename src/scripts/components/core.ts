@@ -1,5 +1,5 @@
-import { FileManagerConfig } from '../../../types';
-import { FileManagerCoreComponent } from './dom-elements';
+import { FileManagerConfig } from '~/types';
+import { FileManagerCoreComponent } from '~/scripts/components/dom-elements';
 
 /**
  * @class Core
