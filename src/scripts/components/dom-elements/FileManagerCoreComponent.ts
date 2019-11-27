@@ -1,6 +1,6 @@
-import CoreComponent from './CoreComponent';
-import { FileManagerConfig } from '../../../../types';
-import '../../../styles/main.css';
+import CoreComponent from '~/scripts/components/dom-elements/CoreComponent';
+import { FileManagerConfig } from '~/types';
+import '~/styles/main.css';
 
 export class FileManagerCoreComponent extends CoreComponent {
   public constructor(configuration?: FileManagerConfig) {

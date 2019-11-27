@@ -10,8 +10,8 @@
 
 'use strict';
 
-import { FileManagerConfig } from '../../types';
-import Core from './components/core';
+import { FileManagerConfig } from '~/types';
+import Core from '~/scripts/components/core';
 
 /**
  * JSFileManager

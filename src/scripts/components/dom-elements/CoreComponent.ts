@@ -1,4 +1,4 @@
-import { FileManagerConfig } from '../../../../types';
+import { FileManagerConfig } from '~/types';
 
 export default class CoreComponent {
   /**
