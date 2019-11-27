@@ -1,13 +1,16 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
   entry: './src/scripts',
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    library: ['JSFileManager'],
+    libraryTarget: 'umd',
   },
   resolve: {
     modules: [path.join(__dirname, 'src/scripts'), 'node_modules'],
@@ -41,10 +44,13 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.css$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'style-loader',
           },
           {
             loader: 'css-loader',
@@ -52,16 +58,10 @@ module.exports = {
           {
             loader: 'postcss-loader',
           },
-          {
-            loader: 'sass-loader',
-            options: {
-              implementation: require('sass'),
-            },
-          },
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/,
+        test: /\.(png|jpe?g|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -72,12 +72,14 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff|woff2|ttf|otf|eot)$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              outputPath: 'fonts',
+              name: '[name].[ext]',
+              outputPath: './fonts/',
+              publicPath: url => `../fonts/${url}`,
             },
           },
         ],
@@ -86,7 +88,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'bundle.css',
+      filename: '[name].bundle.css',
     }),
   ],
 };
